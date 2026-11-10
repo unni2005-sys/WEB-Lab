@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Styling Methods</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .internal-style {
+            background-color: #fff3cd;
+            color: #856404;
+            padding: 15px;
+            border: 2px solid #ffeeba;
+            border-radius: 8px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Different CSS Styling Methods</h1>
+
+    <!-- External CSS -->
+    <div class="external-style">
+        <h2>External CSS</h2>
+        <p>
+            This section is styled using an external stylesheet called
+            <strong>style.css</strong>.
+        </p>
+    </div>
+
+    <!-- Internal CSS -->
+    <div class="internal-style">
+        <h2>Internal CSS</h2>
+        <p>
+            This section is styled using CSS written inside the
+            <code>&lt;style&gt;</code> tag in the HTML document.
+        </p>
+    </div>
+
+    <!-- Inline CSS -->
+    <div
+        style="
+            background-color: #d1ecf1;
+            color: #0c5460;
+            padding: 15px;
+            margin-top: 20px;
+            border: 2px solid #bee5eb;
+            border-radius: 8px;
+        "
+    >
+        <h2>Inline CSS</h2>
+        <p>
+            This section is styled directly using the
+            <strong>style</strong> attribute.
+        </p>
+    </div>
+
+</body>
+</html>
